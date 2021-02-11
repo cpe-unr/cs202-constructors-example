@@ -25,6 +25,8 @@ public:
 //    Cat(bool catInfoLoaded, const std::string &catName, const std::string &nameCatCallsSelf, int catAge,
 //        const std::string &catFurColor, const std::string &catBreed);
 
+    virtual ~Cat();
+
     bool init(std::string catInfoFile);
     void printCatDetails();
 };

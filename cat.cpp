@@ -74,3 +74,7 @@ void Cat::printCatDetails() {
     cout << "Cat Sleep Time: " << sleepTime << "\n";
 }
 
+Cat::~Cat() {
+    cout << "I am outa here" << endl;
+}
+
