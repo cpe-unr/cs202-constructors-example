@@ -8,13 +8,15 @@
 using namespace std;
 
 // constructors
-//Cat::Cat(string name, string selfName, int age, string catFurColor, string catBreed){
-//    catName = name;
-//    nameCatCallsSelf = selfName;
-//    catAge = age;
-//    this->catFurColor = catFurColor; // what is wrong here
-//    this->catBreed = catBreed; // ?
-//}
+Cat::Cat(string name, string selfName, int age, string catFurColor, string catBreed, const Bowl& abowl){
+    catName = name;
+    nameCatCallsSelf = selfName;
+    catAge = age;
+    this->catFurColor = catFurColor; // what is wrong here
+    this->catBreed = catBreed; // ?
+    //this->bowl = bowl;
+    bowl = abowl;
+}
 
 //Cat::Cat(bool catInfoLoaded, const string &catName, const string &nameCatCallsSelf, int catAge,
 //         const string &catFurColor, const string &catBreed) : catInfoLoaded(catInfoLoaded), catName(catName),
@@ -61,7 +63,6 @@ bool Cat::init(const string catInfoFile) {
     }
     getCatInfo(catDataStream);
     catDataStream.close();
-    catInfoLoaded = true;
     return true;
 }
 

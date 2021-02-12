@@ -1,12 +1,11 @@
 #include "cat.h"
-#include <iostream>
-#include <fstream>
-#include <string>
+
 
 using namespace std;
 
 int main() {
-    Cat myCat;
+    Bowl bowl("blue",10);
+    Cat myCat("Tubby","Killer of Mouses",4,"Brown","Tabby",bowl);
     myCat.init("catdata.txt");
     myCat.printCatDetails();
 }
